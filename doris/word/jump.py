@@ -50,5 +50,5 @@ if __name__ == '__main__':
         j.update(s4)
 
     for k,v in j.most_common():
-        if v<100 : break
+        if v<args.characters_threshold : break
         print(k[0],k[1],v,file=outstream)
