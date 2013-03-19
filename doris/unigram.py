@@ -17,7 +17,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     instream=open(args.input) if args.input else sys.stdin
-    outstream=open(args.output) if args.output else sys.stdout
+    outstream=open(args.output,'w') if args.output else sys.stdout
 
     counter=collections.Counter()
 
