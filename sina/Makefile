@@ -27,3 +27,6 @@ jump13.txt : jump12.txt
 
 jump31.txt : jump.txt
 	./doris/word/jump21.py --words ${wordlist} --input ${corpus} --characters unigram.txt --output $@ --historyfile jump21.txt --dl 1 --dr 0
+
+match.txt : jump.txt
+	./doris/word/match.py --words high_freq.words --historyfile jump.txt --input sina.news.txt --output match.txt

@@ -1,4 +1,4 @@
 *.swp
 *.swo
 data*
-__pycache__/
+__pycache__
