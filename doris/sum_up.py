@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     counter=collections.Counter()
     for line in instream:
-        k,v=line.split()
+        k,_,v=line.rpartition(' ')
         counter.update({k : int(v)})
     s=0
     for k,v in counter.most_common():

@@ -1,0 +1,4 @@
+scripts to trans from original sogou_t file to dry_dog file in .7z
+
+
+url, *text_segments = line.split()
