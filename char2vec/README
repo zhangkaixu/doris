@@ -1,0 +1,38 @@
+char2vec
+==========================
+
+名字仿造Google放出来的word2vec
+
+
+主要做中文字和字的bigram的embedding，即将符号对应于向量空间中的向量。
+
+
+
+算法步骤
+================================
+
+make word list
+--------------------------------
+just scan the corpus and count
+
+
+make skip bigrams
+--------------------------------
+
+
+
+matching
+--------------------------------
+just scan the corpus and count
+
+
+
+PCA
+--------------------------------
+
+
+1. 遍历一遍语料库，计算字和二字串unigram的频率，计算skip bigram的频率
+
+2. 再次遍历一遍语料库， 计算高频skip bigram对目标的匹配情况
+
+3. 确定skip bigram
